@@ -1,0 +1,37 @@
+dico = {}
+
+dico["Astronomie"] = ["Soleil","Terre","Mars","Jupiter","Saturne","Etoile","Lune","Astronaute","Copernic","Keppler",
+"Satellite" ,"Cosmos","Espace","Ciel","Nuage",
+"Astre","Galaxie","Eclipse", "Gravitation","Magnitude"]
+
+dico["Fruits et légumes"] = ["Banane","Kiwi","Pomme","Carotte","Oignon","Fraise","Navet","Concombre",
+"Pois","Avocat","Radis","Poire","Courgette","Tomate","Courge","Cornichon",
+"Mangue","Ananas","Poireau" ,"Abricot", "Cassis", "Cerise", "Figue", "Framboise", "Groseille",
+"Melon", "Mirabelle", "Mûre", "Myrtille", "Prune" , "Artichaut", "Aubergine",
+"Blette", "Brocolis", "Carotte"]
+
+dico["Etats USA"] = [ "Alabama", "Alaska","Arizona", "Arkansas", "Californie", "Colorado", "Connecticut", "Delaware", "Floride",
+"Idaho", "Illinois", "Indiana", "Iowa", "Kansas", "Kentucky", "Louisiane", "Maine", "Maryland", "Massachusetts", "Michigan",
+"Minnesota", "Mississippi", "Missouri", "Montana", "Nebraska", "Nevada", "New Hampshire", "New Jersey", "Nouveau-Mexique",
+"Hawai","New York", "Caroline du Nord", "Dakota du Nord", "Ohio", "Oklahoma", "Oregon", "Pennsylvanie", "Rhode-Island",
+"Caroline du Sud", "Dakota du Sud", "Tennessee", "Texas", "Utah", "Vermont", "Virginie" , "Washington",
+"Virginie occidentale", "Wisconsin" , "Wyoming" ]
+
+dico["Marques Auto"] = ["Lexus","Toyota","Porsche","Renault","Peugeot","Kia","Suzuki","Hyundai","Volskwagen","Audi","BMW" ,"Chevrolet","Nissan",
+"Mazda","Mercedes", "Volvo","Chrysler", "Jagua","Honda","Land Rover","Tesla" ,
+"Citroen","Fiat","Ferrari","Lamborghini","Seat","Skoda","Opel","Dacia"]
+
+dico["Animaux"] = ["Girafe", "Antilope", "Buffle", "Dromadaire", "Hippopotame", "Canard", "Ibis", "Spatule", "Aigrette",
+"Flamant" , "Gazelle", "Rat", "Cochon", "Hamster", "Souris",
+"Furet" , "Iguane", "Scorpion", "Perruche", "Perroquet", "Diamant", "Canaris", "Mainate", "Toucan", "Poule", "Dindon", "Paon", "Oie", "Canard"]
+
+# pour trouver le(s) mot(s) le plus long
+len_Max = 0
+for k in dico:
+    for m in dico[k]:
+        len_m = len(m)
+        if len_m  >= len_Max :
+            len_Max = len_m
+            print(len_Max)
+            print(m)
+
